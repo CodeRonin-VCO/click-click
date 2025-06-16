@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+h1 {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    
+    button {
+        margin: 0 1.5rem;
+        padding: .8rem 1.6rem;
+        border-radius: .8rem;
+        border: .2rem solid $main-dark;
+        background-color: $red-light;
+
+        &:hover, &.active {
+            color: $white-medium;
+            background-color: $red-dark;
+        }
+    }
+}
